@@ -1,45 +1,40 @@
 import './AllCards.css';
+import Card from './Card';
 
 function AllCards() {
+  const infocards = [
+      {
+          id: 1,
+          title: 'Card 1',
+          description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+      },
+      {
+        id: 2,
+        title: 'Card 2',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+    },
+    {
+        id: 3,
+        title: 'Card 1',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+    }
+  ]
+
   return (
-    <div>
-        <h1 className="h1">itechart-react-course - React-components</h1>
         <div className="flex container-cards">
-            <div className="card-item">
-                <h2 className="card-item__named h2">
-                lorem ipsum lorem ipsum
-                </h2>
-                <div className="card-item__description">
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                </div>
-            </div>
-            <div className="card-item">
-                <h2 className="card-item__named h2">
-                lorem ipsum lorem ipsum
-                </h2>
-                <div className="card-item__description">
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                </div>
-            </div>
-            <div className="card-item">
-                <h2 className="card-item__named h2">
-                lorem ipsum lorem ipsum
-                </h2>
-                <div className="card-item__description">
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                </div>
-            </div>
+            <Card 
+                title={infocards[0].title}
+                description={infocards[0].description}
+            ></Card>
+            <Card 
+                title={infocards[1].title}
+                description={infocards[1].description}
+            ></Card>
+            <Card 
+                title={infocards[2].title}
+                description={infocards[2].description}
+            ></Card>
         </div>
-    </div>
   );
 }
 
