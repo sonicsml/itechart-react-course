@@ -8,4 +8,5 @@
     max-width: 1140px;
     padding: 20px;
     margin: auto;
+    flex-wrap: wrap;
 }

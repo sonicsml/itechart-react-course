@@ -1,0 +1,21 @@
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 29%;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    min-height: 155px;
+    margin-bottom: 1%;
+}
+.card-item__named {
+    text-align: center;
+}
+.card-item__button {
+    margin-top: 4%;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
