@@ -3,7 +3,7 @@ import Header from './components/Header';
 import './App.css';
 
 function App() {
-  const infocards = [
+  const cards = [
     {
         id: 1,
         title: 'Card 1',
@@ -21,9 +21,9 @@ function App() {
   }
 ]
   return (
-    <div>
+    <div className="container">
     <Header sitename="itechart-react-course - React-components" />,
-    <AllCards itemts={infocards}></AllCards>
+    <AllCards items={cards}></AllCards>
     </div>
   );
 }

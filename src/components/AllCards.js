@@ -1,23 +1,21 @@
 import './AllCards.css';
 import Card from './Card';
 
-function AllCards(props) {
-
+const AllCards = (props) => {
   return (
+    <div>
         <div className="flex container-cards">
+          {props.items.map((card) => (
             <Card 
-                title={props.infocards[0].title}
-                description={infocards[0].description}
-            ></Card>
-            <Card 
-                title={props.infocards[1].title}
-                description={infocards[1].description}
-            ></Card>
-            <Card 
-                title={props.infocards[2].title}
-                description={infocards[2].description}
-            ></Card>
+              key={card.id}
+              title={card.title} 
+              description={card.description}
+            >
+            </Card>
+          ))}
+        
         </div>
+    </div>
   );
 }
 
