@@ -4,10 +4,6 @@ import AddCardModal from './AddCardModal';
 
 const AddCard = (props) => {
     const [isEditing, setIsEditing] = useState(false);
-    // const clickHandler = () => {
-    //     let title = "Update!";
-    //     console.log(title);
-    // }
     const saveCardDataHandler = (enteredAddFormData) => {
         const cardData = {
             ...enteredAddFormData,
