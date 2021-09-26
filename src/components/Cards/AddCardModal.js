@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./AddCardModal.css";
 
 const AddCardModal = (props) => {
+<<<<<<< HEAD
 	const [enteredTitle, setEnteredTitle] = useState("");
 	const [enteredDescription, setEnteredDescription] = useState("");
 	const [isTitleValid, setIsTitleValid] = useState(false);
@@ -41,6 +42,46 @@ const AddCardModal = (props) => {
     setEnteredDescription("");
   };
 
+=======
+  const [enteredTitle, setEnteredTitle] = useState("");
+  const [enteredDescription, setEnteredDescription] = useState("");
+  const [isTitleValid, setIsTitleValid] = useState(false);
+  const [isDescValid, setIsDescValid] = useState(false);
+  const [isTitleTouched, setIsTitleTouched] = useState(false);
+  const [isDescTouched, setIsDescTouched] = useState(false);
+
+  const titleChangeHandler = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setIsTitleValid(true);
+    } else {
+      setIsTitleValid(false);
+    }
+    setIsTitleTouched(true);
+    setEnteredTitle(event.target.value);
+  };
+  const descriptionChangeHandler = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setIsDescValid(true);
+    } else {
+      setIsDescValid(false);
+    }
+    setIsDescTouched(true);
+    setEnteredDescription(event.target.value);
+  };
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const addFormDate = {
+      title: enteredTitle,
+      description: enteredDescription,
+    };
+    props.onSaveCardData(addFormDate);
+
+    setEnteredTitle("");
+    setEnteredDescription("");
+  };
+
+>>>>>>> origin/add-card
   return (
     <div className="modal addcard__modal flex">
       <div className="modal__title">Add new card</div>
@@ -87,7 +128,11 @@ const AddCardModal = (props) => {
             Сancel
           </button>
         </div>
+<<<<<<< HEAD
 				</form>
+=======
+      </form>
+>>>>>>> origin/add-card
     </div>
   );
 };
