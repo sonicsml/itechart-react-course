@@ -5,20 +5,12 @@ import AddCard from "./components/Cards/AddCard";
 import "./App.css";
 
 const CARD_DATA = [
-<<<<<<< HEAD
   {   
-=======
-  {
->>>>>>> origin/add-card
     id: "1",
     title: "Card 1",
     description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
   },
-<<<<<<< HEAD
-  { 
-=======
   {
->>>>>>> origin/add-card
     id: "2",
     title: "Card 2",
     description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
@@ -37,16 +29,9 @@ const App = () => {
     });
   };
   return (
-<<<<<<< HEAD
     <div className="container"> 
       <Header sitename="itechart-react-course - React-components" />
       <AllCards items={cards} />
-=======
-    <div className="container">
-      <Header sitename="itechart-react-course - React-components" />
-      <AllCards items={cards} />
-
->>>>>>> origin/add-card
       <AddCard onAddCard={addCardHandler} />
     </div>
   );
