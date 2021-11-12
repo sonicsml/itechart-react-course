@@ -19,3 +19,6 @@
 .button-container  {
      justify-content: space-around;
 }
+.MuiFormControl-root {
+    width: 100%;
+}
