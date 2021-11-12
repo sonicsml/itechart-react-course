@@ -2,27 +2,16 @@
     position: absolute;
     top:20%;
     padding: 1.5rem;
-    background: #c1c1c1;
+    background: #fff;
     border: 1px solid #a8a8a8;
     box-shadow: 5px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.modal__title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.addcard__title input {
-    width: 94%;
-    padding: .5rem;
-}
-.addcard__description textarea {
-    padding: .5rem;
 }
 .addcard__modal,
 .addcard__title,
 .addcard__description {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
 }
 .addcard__modal {
     margin: auto;
@@ -30,9 +19,6 @@
 .button-container  {
      justify-content: space-around;
 }
-.addcard__button-cancel {
-    background-color: rgb(251, 89, 89);
-}
-.addcard__button-add {
-    background-color: #4caf50;
+.MuiFormControl-root {
+    width: 100%;
 }
