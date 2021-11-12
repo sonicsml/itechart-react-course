@@ -1,5 +1,5 @@
 import './AllCards.css';
-import Card from './Card';
+import Card from './CardItem';
 
 const AllCards = (props) => {
   return (

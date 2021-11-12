@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
-import './AddCard.css';
-import AddCardModal from './AddCardModal';
+import React, { useState } from "react";
+import "./AddCard.css";
+import AddCardModal from "./AddCardModal";
+import Fab from "@mui/material/Fab";
+// import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
+import AddIcon from '@mui/icons-material/Add';
+
+
 
 const AddCard = (props) => {
     const [isEditing, setIsEditing] = useState(false);
@@ -22,7 +27,13 @@ const AddCard = (props) => {
     return (
             <div className="flex center addcard-newcard">
                 {!isEditing && (
-                    <button className="button addcard__button" onClick={startEditingHandler}>Add New Card</button>
+                    <Fab 
+                        color="primary" 
+                        aria-label="add"
+                        onClick={startEditingHandler}
+                    >
+                        <AddIcon />
+                    </Fab>
                 )}
                 {isEditing && (
                     <AddCardModal 
