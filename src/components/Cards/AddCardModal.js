@@ -59,7 +59,7 @@ const AddCardModal = (props) => {
             placeholder="Title" 
             onChange={titleChangeHandler}
             value={enteredTitle}
-            defaultValue="Normal"
+            // defaultValue="Normal"
           />        
         </div>
         <div className="addcard__description flex">
@@ -69,7 +69,7 @@ const AddCardModal = (props) => {
             placeholder="Description" 
             value={enteredDescription}
             onChange={descriptionChangeHandler}
-            defaultValue="Normal"
+            // defaultValue="Normal"
             multiline
             rows={5}
             rowsmax={30}
